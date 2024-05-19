@@ -37,7 +37,7 @@ export interface OmiseTokenParameters {
 	expiration_year: number
 	name: string
 	number: number | string
-	phone_number?: number
+	phone_number?: string
 	postal_code?: number
 	security_code?: number
 	state?: string
@@ -63,7 +63,7 @@ export interface Card {
 	name: string
 	number: number | string | null
 	object: string
-	phone_number: number
+	phone_number: string
 	postal_code: number
 	security_code: number
 	state: string | null
@@ -102,7 +102,7 @@ export interface OmiseCreateSourceParameters {
     email?: string
     installment_term?: number
     name?: string
-    phone_number?: string | number
+    phone_number?: string
     store_id?: string | number
     store_name?: string
     terminal_id?: string | number
